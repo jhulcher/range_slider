@@ -1,0 +1,96 @@
+* {
+  font-size: 14px;
+}
+
+.slider_div {
+  padding: 50px 0px 50px 0px;
+  width: 263px;
+}
+
+.slider_holder {
+  display: inline;
+  margin: 50px 0px 0px 5px;
+}
+
+.left {
+  margin: 2px 0px 0px 0px;
+  float: left;
+  clear: left;
+}
+
+.circle {
+  display: inline;
+  text-align: center;
+  vertical-align: top;
+  line-height: 14px;
+  font-weight: bold;
+  border: solid 2px;
+  background-color: white;
+  border-color: #e1eaea;
+  color: #00ace6;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+}
+
+.right {
+  margin: 2px 0px 0px 5px;
+  display: inline;
+  float: right;
+  clear: right;
+}
+
+.range {
+  background-color: #e1eaea;
+  height: 2px;
+  width: 215px;
+  display: inline-block;
+  position: absolute;
+  margin: 11px 0px 0px 0px;
+}
+
+.slider {
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  line-height: 25px;
+  background-color: #00ace6;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+}
+
+.slider:hover {
+  cursor: pointer;
+}
+
+.slider:hover:after{
+  background: #333;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: 26px;
+  color: white;
+  content: attr(data-content);
+  vertical-align: bottom;
+  line-height: 20%;
+  left: 20%;
+  margin: 0px 0px 10px 0px;
+  padding: 15px 17px 15px 13px;
+  position: absolute;
+  height: 0px;
+  width: 10px;
+  left: -32%;
+}
+
+.slider:hover:before{
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 6px 6px 0px 6px;
+  bottom: 20px;
+  content: "";
+  margin: 0px 0px 10px 0px;
+  left: 25%;
+  position: absolute;
+}

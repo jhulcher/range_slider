@@ -1,0 +1,47 @@
+<html>
+
+  <head>
+
+    <title>jQuery Slider</title>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="slider.js"></script>
+
+  </head>
+
+  <body>
+
+    <div>
+      <form title="Guess what?"
+            onSubmit="alert('Your favorite number is ' + value + '!');">
+
+        <span>
+          Choose your favorite number between 0 and 100!
+        </span>
+
+        <div class="slider_div">
+          <span class="circle left">-</span>
+          <div class="slider_holder">
+            <span class="range"></span>
+            <span class="slider"></span>
+          </div>
+          <span class="circle right">+</span>
+        </div>
+
+        <input type="hidden" value={this.value}>
+
+        <span>
+          <input type="submit" value="Submit" />
+        </span>
+
+      </form>
+    </div>
+
+
+  </body>
+
+</html>
